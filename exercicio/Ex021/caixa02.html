@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            background-color: rgb(180, 175, 175);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0%;
+
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color: gray;
+            padding: 3px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.562);
+        }
+        nav > a{
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 30px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+            
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+        article{
+            background-color: rgb(180, 170, 170);
+            padding: 5px;
+        }
+        article > aside{ 
+            background-color: gray;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assunto">
+            <p>Esporte política e tecnologia</p>
+        </section>
+        <section id="noticia">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quis, exercitationem earum placeat eveniet facilis sequi doloremque nostrum suscipit est culpa fugit corrupti modi praesentium cum aperiam recusandae reprehenderit dolore.</p>
+                <aside>
+                    <p>Artigo escrito por Jefferson de Sena</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Curso em Videos</p>
+    </footer>
+</body>
+</html>

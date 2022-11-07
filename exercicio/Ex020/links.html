@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* Seletores personalizados
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > = childre  (filho)
+        */
+        a{
+            color: blue;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        a:visited{  /* Se foi visitado fica essa cor*/
+            color: blueviolet;
+        }
+        a:hover{ /* ao passar o mouse fica com essa com e sublinhado*/
+            color: yellowgreen;
+            text-decoration: underline;
+        }
+        a:active{ /* quando clica fica com essa cor*/
+            color: red;
+        }
+        .especial::after{/* mostra qualquer nome no final do link, o que está em contet*/
+            content: '[Link]';
+            text-decoration: none;
+            color: rgb(199, 186, 168);
+            font-weight: normal;
+        }
+        .especial::before{/*mostrar qualquer nome no inicio do link, o que esta em content*/ 
+            content: '[Link]';
+            color: rgb(199, 192, 184);
+            font-weight: normal;   
+        }
+        .especial{
+            background-color: rgb(197, 162, 145);
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <!--Criar um class="especial  para modificar so esse link especifico"-->
+        <li><a href="https://www.instagram.com/jeffersonjoseane/" class="especial" target="_blank">Meu Instagram</a></li>
+        <li><a href="https://www.youtube.com/channel/UCZFym0zGNuqfimMRQDfG1Tw" target="_blank">Canal YouTube</a></li>
+        <li><a href="https://www.facebook.com/Jefferson.Joseane" target="_blank">Meu Facebook</a></li>
+    </ul>
+</body>
+</html>
