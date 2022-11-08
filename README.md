@@ -1,2 +1,2 @@
-# html-css
+#html-css #exercicio
  Curso de HTML 5 e CSS 3
