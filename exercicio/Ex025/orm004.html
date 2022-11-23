@@ -9,7 +9,8 @@
 <body>
     <h1>Exemplo de formulário</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
-        
+       <fieldset> <!--Colocar dentro de um quadrado-->
+            <legend>Dados pessoais</legend> <!--Colocando uma legenda no quadrado-->
         <p>
             <label for="iname">Nome</label>
             <input type="text" name="nome" id="inome" minlength="3" required>
@@ -22,6 +23,7 @@
             <label for="itelefone">Telefone</label>
             <input type="tel" name="telefone" id="itelefone" required autocomplete="tel" pattern="^\(d{2}\)\d{4,5}-\d{4}$">
         </p>
+    </fieldset>
         <!--Estudar mais sobre RegEx-->
         <p>
             <input type="submit" value="Enviar">
