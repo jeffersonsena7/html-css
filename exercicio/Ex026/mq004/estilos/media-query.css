@@ -10,7 +10,27 @@ Tablet: 768px até 992px
 Desktop: 992px até 1200px
 Grandes telas: acima de 1200px  */
 
-@media print{
+@media print{ /*impressora*/
+    body{
+        background-image: url(../imagens/back-print.jpg);
+    }
+    main{
+        border: 2px solid black;
+    }
+    main > h1{
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+    }
+    img#celular{display: none;}
+
+    img#tablet{display: none;}
+
+    img#impressora{display: block;}
+
+    img#computador{display: none;}
+
+    img#televisao{display: none;}
 
 }
 @media screen and (min-width: 768px) and (max-width: 992px) { /*tablete*/
